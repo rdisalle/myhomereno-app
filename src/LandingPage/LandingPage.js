@@ -9,23 +9,17 @@ class LandingPage extends Component {
             <h1>Welcome to MyHomeReno</h1>
             <h2>To Get Started: </h2>
             <ul className="Landing_list">
-              <li className="LandingList_item">Simply click "View Courses" below</li>
-              <li className="LandingList_item">From there you will navigate to a course list page. On this page, press "Add Course" and fill in the information.</li>
-              <li className="LandingList_item">Once you have a course added, you will have the ability to add scores to the course.</li>
-              <li className="LandingList_item">To add a score, press "Add Score" and fill out the information.</li>
-              <li className="LandingList_item">Once done, you will be able to view that score under the course selected.</li>
-              <li className="LandingList_item">GolfScore will allow you to easily submit all courses played and the scores to go with them.</li>
-              <li className="LandingList_item">From here you will be able to easily compare your scores.</li>
+              <li className="LandingList_item">Simply click "View Projects" below</li>
+              <li className="LandingList_item">From there you will navigate to a project list page. On this page, press "Add Project" and fill in the information.</li>
+              <li className="LandingList_item">Once you have a project added, you will have the ability to add estimates to the project.</li>
+              <li className="LandingList_item">To add an estimate, press "Add Estimate" and fill out the information.</li>
+              <li className="LandingList_item">Once done, you will be able to view that estimate under the estimate selected.</li>
+              <li className="LandingList_item">MyHomeReno will allow you to you view all of your projects in one convient place.</li>
+              <li className="LandingList_item">Within projects, you can store and compare estimates and choose the best one for you.</li>
             </ul>
             <div>
               <Link className="Landing_Link" to={'/view-current-project-list'} >
                 View Projects
-              </Link>
-              <Link className="Landing_Link_SignUp" to={'/sign-up-page'} >
-                Sign Up
-              </Link>
-              <Link className="Landing_Link_Login" to={'/login-page'} >
-                Login
               </Link>
             </div>
          </main>

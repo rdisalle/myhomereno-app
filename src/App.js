@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom'
 import './App.css';
-import SignUpPage from './SignUpPage/SignUpPage';
-import LoginPage from './LoginPage/LoginPage';
 import NavBar from './NavBar/NavBar';
 import LandingPage from './LandingPage/LandingPage';
 import ViewCurrentProjects from './ViewCurrentProjects/ViewCurrentProjects';
@@ -205,8 +203,6 @@ class App extends Component {
         <NavBar />
         <h1 className="AppHeader">MyHomeReno</h1>
         <Route exact path="/" component={LandingPage} />
-        <Route path="/sign-up-page" component={SignUpPage} />
-        <Route path="/login-page" component={LoginPage} />
         <Route path="/view-current-project-list" component={ViewCurrentProjects} />
         <Route path="/view-project-page/:projectId" component={ViewProject} />
         <Route path="/add-project" component={AddProject} />

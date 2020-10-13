@@ -56,18 +56,6 @@ exports[`LandingPage component renders a .LandingPage by default 1`] = `
     >
       View Projects
     </Link>
-    <Link
-      className="Landing_Link_SignUp"
-      to="/sign-up-page"
-    >
-      Sign Up
-    </Link>
-    <Link
-      className="Landing_Link_Login"
-      to="/login-page"
-    >
-      Login
-    </Link>
   </div>
 </main>
 `;

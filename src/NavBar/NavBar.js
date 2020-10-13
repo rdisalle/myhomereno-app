@@ -7,13 +7,6 @@ class NavBar extends Component {
     return ( 
       <div className="NavBar">
         <div className="SearchBar__controls">
-            <Link to={'/sign-up-page'}>
-    	        Sign Up
-            </Link>
-            {' '}
-            <Link to={'/login-page'}>
-    	        Login
-            </Link>
             <Link className="Landing_Link" to={'/view-current-project-list'} >
                 View Projects
             </Link>
