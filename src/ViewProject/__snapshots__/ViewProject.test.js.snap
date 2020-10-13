@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ViewProjects component renders a .ViewProject by default 1`] = `
+<section
+  className="ProjectItem"
+>
+  <ProjectPage
+    delete={[Function]}
+    details=""
+    estimated_cost=""
+    name=""
+    room=""
+    status=""
+    summary=""
+    total_time=""
+    type=""
+  />
+</section>
+`;
+
+exports[`ViewProjects component renders a Projects with project prop 1`] = `null`;

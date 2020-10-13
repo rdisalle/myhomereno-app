@@ -1,0 +1,139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectPage component renders a .ProjectPage by default 1`] = `
+<div
+  className="ProjectPage"
+>
+  <div
+    className="projectInfo"
+  >
+    <ul
+      className="projectInfo_list"
+    >
+      <li
+        className="projectPage_name"
+      />
+      <li
+        className="projectPage_estimated_cost"
+      />
+      <li
+        className="projectPage_total_time"
+      />
+      <li
+        className="projectPage_room"
+      />
+      <li
+        className="projectPage_details"
+      />
+      <li
+        className="projectPage_type"
+      />
+      <li
+        className="projectPage_status"
+      />
+      <li
+        className="projectPage_summary"
+      />
+    </ul>
+  </div>
+  <div
+    className="ProjectCommands"
+  >
+    <Link
+      className="Project_Link"
+      to="/view-project-estimates/undefined"
+    >
+      View Estimates
+    </Link>
+    <Link
+      className="Project_Link"
+      to="/add-estimate/undefined"
+    >
+      Add Estimate
+    </Link>
+    <Link
+      className="Project_Link"
+      to="/edit-project/undefined"
+    >
+      Edit Project
+    </Link>
+    <button
+      className="Course_Delete"
+      onClick={[Function]}
+      type="button"
+    >
+      Delete
+    </button>
+  </div>
+</div>
+`;
+
+exports[`ProjectPage component renders the ProjectPage given props 1`] = `
+<div
+  className="ProjectPage"
+>
+  <div
+    className="projectInfo"
+  >
+    <ul
+      className="projectInfo_list"
+    >
+      <li
+        className="projectPage_name"
+      >
+        test-class-name
+      </li>
+      <li
+        className="projectPage_estimated_cost"
+      />
+      <li
+        className="projectPage_total_time"
+      />
+      <li
+        className="projectPage_room"
+      />
+      <li
+        className="projectPage_details"
+      />
+      <li
+        className="projectPage_type"
+      />
+      <li
+        className="projectPage_status"
+      />
+      <li
+        className="projectPage_summary"
+      />
+    </ul>
+  </div>
+  <div
+    className="ProjectCommands"
+  >
+    <Link
+      className="Project_Link"
+      to="/view-project-estimates/1"
+    >
+      View Estimates
+    </Link>
+    <Link
+      className="Project_Link"
+      to="/add-estimate/1"
+    >
+      Add Estimate
+    </Link>
+    <Link
+      className="Project_Link"
+      to="/edit-project/1"
+    >
+      Edit Project
+    </Link>
+    <button
+      className="Course_Delete"
+      onClick={[Function]}
+      type="button"
+    >
+      Delete
+    </button>
+  </div>
+</div>
+`;

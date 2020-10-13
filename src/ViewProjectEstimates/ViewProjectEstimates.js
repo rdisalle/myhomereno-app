@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import MyHomeRenoContext from '../MyHomeRenoContext';
 import PropTypes from 'prop-types' ;
 
-class ViewCurrentEstimates extends Component {
+class ViewProjectEstimates extends Component {
   static defaultProps = {
     match: {
       params: {}
@@ -19,7 +19,7 @@ class ViewCurrentEstimates extends Component {
     this.props.history.push(`/view-project-estimates/${projectId}`);
   };
 
-  getestimatesForProject = (estimates=[], projectId) => (
+  getEstimatesForProject = (estimates=[], projectId) => (
     (!projectId)
         ? estimates
         : estimates.filter(estimate => estimate.project_id === JSON.parse(projectId))
@@ -66,8 +66,8 @@ class ViewCurrentEstimates extends Component {
 }
 
 
-ViewCurrentEstimates.propTypes = {
+ViewProjectEstimates.propTypes = {
   match: PropTypes.object
 };
 
-export default ViewCurrentEstimates;
+export default ViewProjectEstimates;

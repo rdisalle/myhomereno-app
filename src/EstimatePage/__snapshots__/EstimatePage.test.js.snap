@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EstimatePage component renders the EstimatePage given props 1`] = `
+<div
+  className="EstimatePage"
+>
+  <div
+    className="EstimateInfo"
+  >
+    <ul
+      className="EstimatePage_list"
+    >
+      <li
+        className="EstimatePage_name"
+      >
+        test-class-name
+      </li>
+      <li
+        className="EstimatePage_info"
+      >
+        Contractor: 
+         
+         
+      </li>
+      <li
+        className="EstimatePage_info"
+      >
+        Price: 
+         
+         
+      </li>
+      <li
+        className="EstimatePage_info"
+      />
+      <li
+        className="EstimatePage_info"
+      >
+        Time Frame: 
+         
+         
+      </li>
+      <li>
+        <div
+          className="Estimate_dates"
+        >
+          <div
+            className="Estimate_dates-created"
+          >
+            Created:
+             
+            <span
+              className="Date"
+            >
+              January 22nd 2020
+            </span>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div
+    className="EstimatePage_command"
+  >
+    <Link
+      className="EstimatePage_link"
+      to="/edit-estimate/1"
+    >
+      Edit Estimate
+    </Link>
+  </div>
+  <button
+    className="Estimate_Delete"
+    onClick={[Function]}
+    type="button"
+  >
+    Delete
+  </button>
+</div>
+`;

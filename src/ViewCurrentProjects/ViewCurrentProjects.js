@@ -13,7 +13,7 @@ class ViewCurrentProjects extends Component {
     estimates.filter(estimate => estimate.project_id === projectId).length;
 
     onDelete = () => {
-        this.props.history.push('/view-current-projects-list');
+        this.props.history.push('/view-current-project-list');
       };
 
     render() {

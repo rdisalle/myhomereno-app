@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ViewEstimate component renders a .ViewEstimate by default 1`] = `
+<section
+  className="ViewEstimatePage"
+>
+  <EstimatePage
+    contractor_name=""
+    delete={[Function]}
+    details=""
+    name=""
+    price=""
+    total_time=""
+  />
+</section>
+`;
+
+exports[`ViewEstimate component renders a estimate with estimate prop 1`] = `null`;

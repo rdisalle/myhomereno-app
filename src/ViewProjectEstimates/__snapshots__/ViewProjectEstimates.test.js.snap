@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ViewProjectEstimates component renders a .ViewProjectEstimates by default 1`] = `
+<div
+  className="ViewProjectEstimates"
+>
+  <h2
+    className="ViewProjectEstimates_project"
+  />
+  <Link
+    className="ProjectEstimate_add"
+    to="/add-estimate/undefined"
+  >
+    Add Estimate
+  </Link>
+  <ul
+    className="ViewProjectEstimates_list"
+  />
+</div>
+`;
+
+exports[`ViewProjectEstimates component renders a estimate in ul for each estimate in array 1`] = `
+<ul
+  className="ViewProjectEstimates_list"
+/>
+`;

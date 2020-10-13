@@ -33,7 +33,6 @@ class EstimatePage extends Component {
             return;
           })
           .then(() => {
-            this.props.delete();
             this.context.deleteEstimate(estimateId);
           })
           .catch(error => {
@@ -91,6 +90,16 @@ class EstimatePage extends Component {
     );   
   };
 };
+
+EstimatePage.propTypes = {
+    id: PropTypes.number,
+    onDeleteNote: PropTypes.func,
+    name: PropTypes.string.isRequired,
+    contractor_name: PropTypes.string.isRequired,
+    price: PropTypes.string.isRequired,
+    details: PropTypes.string.isRequired,
+    total_time: PropTypes.string.isRequired,
+  };
 
 export default EstimatePage;
 
