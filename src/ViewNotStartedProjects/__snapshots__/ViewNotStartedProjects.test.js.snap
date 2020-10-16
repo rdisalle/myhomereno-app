@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ViewNotStartedProjects component renders a .ViewNotStartedProjects by default 1`] = `
+<div
+  className="ViewCurrentProjects"
+>
+  <div
+    className="ViewProjects_select"
+  >
+    <Link
+      className="ViewProjectType_link"
+      to="/view-current-project-list"
+    >
+      All Projects
+    </Link>
+    <Link
+      className="ViewProjectType_link"
+      to="/view-not-started-project-list"
+    >
+      Not Started
+    </Link>
+     
+    <Link
+      className="ViewProjectType_link"
+      to="/view-in-progress-project-list"
+    >
+      In Progress
+    </Link>
+     
+    <Link
+      className="ViewProjectType_link"
+      to="/view-completed-project-list"
+    >
+      Completed
+    </Link>
+  </div>
+  <Link
+    className="AddProject_link"
+    to="/add-project"
+  >
+    Add Project
+  </Link>
+  <ul
+    className="ViewCurrentProjects_list"
+  />
+</div>
+`;
+
+exports[`ViewNotStartedProjects component renders a Project in ul for each project in array 1`] = `
+<ul
+  className="ViewCurrentProjects_list"
+/>
+`;
