@@ -4,6 +4,9 @@ import './App.css';
 import NavBar from './NavBar/NavBar';
 import LandingPage from './LandingPage/LandingPage';
 import ViewCurrentProjects from './ViewCurrentProjects/ViewCurrentProjects';
+import ViewNotStartedProjects from './ViewNotStartedProjects/ViewNotStartedProjects';
+import ViewInProgressProjects from './ViewInProgressProjects/ViewInProgressProjects';
+import ViewCompletedProjects from './ViewCompletedProjects/ViewCompletedProjects';
 import ViewProject from './ViewProject/ViewProject';
 import AddEstimate from './AddEstimate/AddEstimate';
 import AddProject from './AddProject/AddProject';
@@ -204,6 +207,9 @@ class App extends Component {
         <h1 className="AppHeader">MyHomeReno</h1>
         <Route exact path="/" component={LandingPage} />
         <Route path="/view-current-project-list" component={ViewCurrentProjects} />
+        <Route path="/view-not-started-project-list" component={ViewNotStartedProjects} />
+        <Route path="/view-in-progress-project-list" component={ViewInProgressProjects} />
+        <Route path="/view-completed-project-list" component={ViewCompletedProjects} />
         <Route path="/view-project-page/:projectId" component={ViewProject} />
         <Route path="/add-project" component={AddProject} />
         <Route path="/edit-project/:projectId" component={EditProject} />

@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import './ViewCurrentProjects.css';
+import './ViewCompletedProjects.css';
 import ProjectPage from '../ProjectPage/ProjectPage';
-import { NavLink } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import MyHomeRenoContext from '../MyHomeRenoContext';
 import PropTypes from 'prop-types';
 
-class ViewCurrentProjects extends Component {
+class ViewCompletedProjects extends Component {
 
     static contextType = MyHomeRenoContext;
 
@@ -22,26 +21,27 @@ class ViewCurrentProjects extends Component {
 
         return (
         <div className="ViewCurrentProjects">
-             <div className="ViewProjects_select">
-                <NavLink className="ViewProjectType_link" activeClassName="active" to={'/view-current-project-list'} >
+            <div className="ViewProjects_select">
+                <Link className="ViewProjectType_link" to={'/view-current-project-list'} >
                     All Projects
-                </NavLink>
-                <NavLink className="ViewProjectType_link" to={'/view-not-started-project-list'}>
+                </Link>
+                <Link className="ViewProjectType_link" to={'/view-not-started-project-list'}>
                     Not Started
-                </NavLink>
-                <NavLink className="ViewProjectType_link" to={'/view-in-progress-project-list'}>
+                </Link>
+                {' '}
+                <Link className="ViewProjectType_link" to={'/view-in-progress-project-list'}>
                     In Progress
-                </NavLink>
-                <NavLink className="ViewProjectType_link" to={'/view-completed-project-list'}>
+                </Link>
+                {' '}
+                <Link className="ViewProjectType_link" to={'/view-completed-project-list'}>
                     Completed
-                </NavLink>
+                </Link>
             </div>
                 <Link className="AddProject_link" to={'/add-project'}>
-                    Add New Project
+                    Add Project
                 </Link>
-            <h1 className= "ViewCurrentProjects_header">All Projects</h1>
             <ul className="ViewCurrentProjects_list">
-                    {projects.map(project =>
+                    {projects.filter(project => project.status === 'Completed').map(project => (
 
                     <li className="ViewCurrentProjects_project" key={project.id}> 
                     <Link
@@ -59,26 +59,25 @@ class ViewCurrentProjects extends Component {
                         total_time={project.total_time}
                         type={project.type}
                         status={project.status}
-                        date_created={project.date_created}
                         delete= {this.onDelete}
                     />
                     <div className="ViewProjectList_estimate">
                     <span className="ViewProjectList_num-scores">
-                        Project Estimates: {this.countEstimatesForProject(estimates, project.id)}
+                        Estimates: ({this.countEstimatesForProject(estimates, project.id)});
                     </span>
                     </div>
                     </li>
-                )}
+                ))}
             </ul>
         </div>
         );
     };
 };
 
-ViewCurrentProjects.propTypes = {
+ViewCompletedProjects.propTypes = {
     history: PropTypes.object
   };
   
-export default ViewCurrentProjects;
+export default ViewCompletedProjects;
                     
                 

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ViewCurrentProjects component renders a .ViewCurrentProjectList by default 1`] = `
+exports[`ViewInProgressProjects component renders a .ViewInProgressProjects by default 1`] = `
 <div
   className="ViewCurrentProjects"
 >
@@ -46,7 +46,7 @@ exports[`ViewCurrentProjects component renders a .ViewCurrentProjectList by defa
 </div>
 `;
 
-exports[`ViewCurrentProjects component renders a Project in ul for each project in array 1`] = `
+exports[`ViewInProgressProjects component renders a Project in ul for each project in array 1`] = `
 <ul
   className="ViewCurrentProjects_list"
 />

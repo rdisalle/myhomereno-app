@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import MyHomeRenoContext from '../MyHomeRenoContext';
 import config from '../config';
 import PropTypes from 'prop-types';
+import format from 'date-fns/format';
 
 class ProjectPage extends Component {
     static defaultProps = {
@@ -17,8 +18,8 @@ class ProjectPage extends Component {
         status: '',
       };
 
-      static contextType = MyHomeRenoContext;
-  
+    static contextType = MyHomeRenoContext;
+
     handleClickDelete = e => {
         e.preventDefault()
         const projectId = this.props.id;
@@ -44,7 +45,7 @@ class ProjectPage extends Component {
     };
 
   render() {
-      const { id, name, summary, estimated_cost, room, details, total_time, type, status } = this.props;
+      const { id, name, summary, estimated_cost, room, details, total_time, type, status, date_created } = this.props;
 
     return (
         <div className="ProjectPage">
@@ -53,26 +54,37 @@ class ProjectPage extends Component {
                     <li className="projectPage_name">
                         {name}
                     </li>
-                    <li className="projectPage_estimated_cost">
-                        {estimated_cost}
-                    </li>
-                    <li className="projectPage_total_time">
-                        {total_time}
+                    <li className="projectPage_status">
+                        {status}
                     </li>
                     <li className="projectPage_room">
-                        {room}
+                        Room: {room}
                     </li>
-                    <li className="projectPage_details">
-                        {details}
+                    <li className="projectPage_summary">
+                        {summary}
                     </li>
                     <li className="projectPage_type">
                         {type}
                     </li>
-                    <li className="projectPage_status">
-                        {status}
+                    <li className="projectPage_estimated_cost">
+                        Cost: {estimated_cost}
                     </li>
-                    <li className="projectPage_summary">
-                        {summary}
+                    <li className="projectPage_total_time">
+                        Time: {total_time}
+                    </li>
+                    <li className="projectPage_details">
+                        {details}
+                    </li>
+                    <li>
+                    <div className="project_date">
+                    <div className="project_date-created">
+                        Created:
+                        {' '}
+                        <span className="Date">
+                        {format(new Date(date_created), "LLLL do yyyy")}
+                        </span>
+                    </div>
+                    </div>
                     </li>
                 </ul>
             </div>
@@ -86,14 +98,14 @@ class ProjectPage extends Component {
                 <Link className="Project_Link" to={`/edit-project/${id}`}>
                     Edit Project
                 </Link>
-                <button
-                    className="Course_Delete"
+            </div>
+            <button
+                    className="Project_Delete"
                     type='button'
                     onClick={this.handleClickDelete}
                 >
                     Delete
-                </button>
-            </div>
+            </button>
         </div>
     );   
   }

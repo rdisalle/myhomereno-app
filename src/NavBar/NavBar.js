@@ -6,8 +6,12 @@ class NavBar extends Component {
   render() {
     return ( 
       <div className="NavBar">
-        <div className="SearchBar__controls">
-            <Link className="Landing_Link" to={'/view-current-project-list'} >
+        <div className="SearchBar_controls">
+            <Link className="Nav_Link" to={'/'} >
+                Home
+            </Link>
+            {' '}
+            <Link className="Nav_Link" to={'/view-current-project-list'} >
                 View Projects
             </Link>
         </div>

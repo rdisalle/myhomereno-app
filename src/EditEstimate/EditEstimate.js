@@ -85,7 +85,7 @@ class EditEstimate extends Component {
         this.setState({ details: e.target.value});
     };
 
-    handleChangeTotal_time= e => {
+    handleChangeTotal_time = e => {
         this.setState({ total_time: e.target.value});
     };
 

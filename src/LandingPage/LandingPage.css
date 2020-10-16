@@ -1,5 +1,33 @@
+.LandingPage {
+    background-color: #F2AB6D;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    color: white;
+}
+
 .Landing_list {
     list-style-type: none;
     padding-left: 0px;
     padding-right: 0px;
+    margin: 10px;
+    padding-bottom: 5px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.Landing_Link {
+    color: #4A608C;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.Landing_Link:hover {
+    color: #BF612A;
+}
+
+.GetStarted {
+    text-align: left;
+    margin-left: 10px;
 }

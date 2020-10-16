@@ -1,3 +1,3 @@
 export default {
-    API_ENDPOINT: 'https://guarded-chamber-81492.herokuapp.com'
+    API_ENDPOINT: 'http://localhost:3000'
   };

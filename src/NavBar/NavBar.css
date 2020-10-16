@@ -1,0 +1,23 @@
+.NavBar {
+    border-bottom: solid 2px #D9AE79;
+    background-color: #587AA6;
+    height: 50px;
+    padding: 10px;
+}
+
+.SearchBar_controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 22px;
+}
+
+.Nav_Link {
+    color: #F2F2F2;
+    text-decoration: none;
+}
+
+.Nav_Link:hover {
+    color: #BF612A;
+}
+

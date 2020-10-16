@@ -28,8 +28,8 @@ class ViewProject extends Component {
         return (
             <section className="ProjectItem">
                   <ProjectPage
-                    id={project.id}
-                    name={project.name}
+                    id= {project.id}
+                    name= {project.name}
                     summary= {project.summary}
                     estimated_cost= {project.estimated_cost}
                     room= {project.room}
@@ -37,6 +37,7 @@ class ViewProject extends Component {
                     total_time= {project.total_time}
                     status= {project.status}
                     type= {project.type}
+                    date_created= {project.date_created}
                     delete= {this.onDelete}
                   />
             </section>
