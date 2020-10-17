@@ -57,11 +57,11 @@ class ProjectPage extends Component {
                     <li className="projectPage_status">
                         {status}
                     </li>
-                    <li className="projectPage_room">
-                        Room: {room}
-                    </li>
                     <li className="projectPage_summary">
                         {summary}
+                    </li>
+                    <li className="projectPage_room">
+                        Room: {room}
                     </li>
                     <li className="projectPage_type">
                         {type}

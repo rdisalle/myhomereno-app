@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './ViewNotStartedProjects.css';
 import ProjectPage from '../ProjectPage/ProjectPage';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import MyHomeRenoContext from '../MyHomeRenoContext';
 import PropTypes from 'prop-types';
 
@@ -25,9 +25,9 @@ class ViewNotStartedProjects extends Component {
                 <Link className="ViewProjectType_link" to={'/view-current-project-list'} >
                     All Projects
                 </Link>
-                <Link className="ViewProjectType_link" to={'/view-not-started-project-list'}>
+                <NavLink className="ViewProjectType_link" activeClassName="active" to={'/view-not-started-project-list'}>
                     Not Started
-                </Link>
+                </NavLink>
                 {' '}
                 <Link className="ViewProjectType_link" to={'/view-in-progress-project-list'}>
                     In Progress
@@ -40,6 +40,7 @@ class ViewNotStartedProjects extends Component {
                 <Link className="AddProject_link" to={'/add-project'}>
                     Add Project
                 </Link>
+            <h1 className= "ViewCurrentProjects_header">Not Started Projects</h1>
             <ul className="ViewCurrentProjects_list">
                     {projects.filter(project => project.status === 'Not Started').map(project => (
 
@@ -59,6 +60,7 @@ class ViewNotStartedProjects extends Component {
                         total_time={project.total_time}
                         type={project.type}
                         status={project.status}
+                        date_created={project.date_created}
                         delete= {this.onDelete}
                     />
                     <div className="ViewProjectList_estimate">

@@ -1,5 +1,47 @@
 .ViewProjectEstimates_list {
+    color: black;
     list-style-type: none;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 0;
+}
+
+.ViewProjectEstimates_name {
+    border: 5px #6B98BF solid;
+    width: 335px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+}
+
+.ProjectEstimate_add {
+    color: #BF612A;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.ViewProjectEstimates {
+    margin-top: 20px;
+}
+
+.ViewProjectEstimates_estimate {
+    border-bottom: 5px #587AA6 solid;
+    margin-bottom: 10px;
+}
+
+.ViewProjectEstimate_viewLink {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    padding-right: 5px;
+    padding-left: 5px;
+    background-color: #F2AB6D;
+}
+
+.EstimatePage_list {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

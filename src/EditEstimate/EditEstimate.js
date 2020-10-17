@@ -103,7 +103,7 @@ class EditEstimate extends Component {
         })
           .then(res => {
             if (!res.ok);
-              return res.json().then(error => Promise.reject(error));
+              return (error => Promise.reject(error));
           })
           .then(() => {
             this.resetFields(newEstimate);

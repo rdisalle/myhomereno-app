@@ -36,15 +36,18 @@ class ViewProjectEstimates extends Component {
       const project = this.findProject(projects, projectId) || { content: '' };
     return (
       <div className="ViewProjectEstimates">
-        <h2 className="ViewProjectEstimates_project">
-          {project.name}
-        </h2>
         <Link className="ProjectEstimate_add" to={`/add-estimate/${projectId}`}>
           Add Estimate
         </Link>
+        <h2 className="ViewProjectEstimates_name">
+          {project.name}
+        </h2>
         <ul className="ViewProjectEstimates_list">  
           {estimatesForProject.map(estimate =>
           <li className="ViewProjectEstimates_estimate" key={estimate.id}>
+            <Link className="ViewProjectEstimate_viewLink" to={`/view-estimate-page/${estimate.id}`}>
+              View 
+            </Link>
             <EstimatePage
               id={estimate.id}
               name={estimate.name}
@@ -54,9 +57,6 @@ class ViewProjectEstimates extends Component {
               total_time={estimate.total_time}
               date_created={estimate.date_created}
             />
-            <Link className="ViewProjectEstimate_viewLink" to={`/view-estimate-page/${estimate.id}`}>
-              View 
-            </Link>
           </li>
           )}
         </ul>

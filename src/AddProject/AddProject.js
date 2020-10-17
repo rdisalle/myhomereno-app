@@ -52,12 +52,12 @@ class AddProject extends Component {
           <h1>Add Project!</h1>
         </div>
         <form 
-            className='AddProject-form'
+            className='AddProject_form'
             onSubmit={e => this.handleFormSubmit(e)}
         >
         <div>
             <label htmlFor="name">
-                Name:
+                Name: {' '}
                 {this.context.newProject.name.touched}
             </label>
             <input
@@ -74,7 +74,7 @@ class AddProject extends Component {
         </div>
         <div>
             <label htmlFor="estimated_cost">
-                Estimated Cost:
+                Estimated Cost: {' '}
                 {this.context.newProject.estimated_cost.touched}
             </label>
             <input
@@ -91,7 +91,7 @@ class AddProject extends Component {
         </div>
         <div>
             <label htmlFor="total_time">
-                Total Time:
+                Total Time: {' '}
                 {this.context.newProject.total_time.touched}
             </label>
             <input
@@ -108,7 +108,7 @@ class AddProject extends Component {
         </div>
         <div>
             <label htmlFor="room">
-                Room:
+                Room: {' '}
                 {this.context.newProject.room.touched}
             </label>
             <input
@@ -125,7 +125,7 @@ class AddProject extends Component {
         </div>
         <div>
             <label htmlFor="details">
-                Details:
+                Details: {' '}
                 {this.context.newProject.details.touched}
             </label>
             <input
@@ -142,7 +142,7 @@ class AddProject extends Component {
         </div>
         <div>
             <label htmlFor="type">
-                Type:
+                Type: {' '}
             </label>
             <select
                 className="AddProjectPage_form"
@@ -164,7 +164,7 @@ class AddProject extends Component {
         </div>
         <div>
             <label htmlFor="status">
-                Status:
+                Status: {' '}
             </label>
             <select
                 className="AddProjectPage_form"
@@ -189,7 +189,7 @@ class AddProject extends Component {
         </div>
         <div>
             <label htmlFor="summary">
-                Summary:
+                Summary: {' '}
                 {this.context.newProject.summary.touched}
             </label>
             <input

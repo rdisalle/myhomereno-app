@@ -74,7 +74,7 @@ class AddEstimate extends Component {
         >
             <div>
             <label htmlFor="name">
-                Estimate Name:
+                Estimate Name: {' '}
                 {this.context.newEstimate.name.touched}
             </label>
             <input 
@@ -91,7 +91,7 @@ class AddEstimate extends Component {
             </div>
             <div>
             <label htmlFor="project">
-                Select Project:
+                Select Project: {' '}
             </label>
             <select 
                 className="AddEstimatePage_form"
@@ -108,7 +108,7 @@ class AddEstimate extends Component {
             </div>
             <div>
             <label htmlFor="contractor_name">
-                Contractor Name:
+                Contractor Name: {' '}
                 {this.context.newEstimate.contractor_name.touched}
             </label>
             <input 
@@ -125,7 +125,7 @@ class AddEstimate extends Component {
             </div>
             <div>
             <label htmlFor="price">
-                Price:
+                Price: {' '}
                 {this.context.newEstimate.price.touched}
             </label>
             <input 
@@ -142,7 +142,7 @@ class AddEstimate extends Component {
             </div>
             <div>
             <label htmlFor="details">
-                Details:
+                Details: {' '}
                 {this.context.newEstimate.details.touched}
             </label>
             <input 
@@ -159,7 +159,7 @@ class AddEstimate extends Component {
             </div>
             <div>
             <label htmlFor="total_time">
-                Time:
+                Time: {' '}
                 {this.context.newEstimate.total_time.touched}
             </label>
             <input 

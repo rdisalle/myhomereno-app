@@ -1,5 +1,39 @@
+.EstimatePage {
+    margin-bottom: 10px;
+}
+
 .EstimatePage_list {
     list-style-type: none;
     padding-left: 0px;
     padding-right: 0px;
+    border: 2px #F2AB6D solid;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.EstimatePageCommand {
+    margin-top: 10px;
+}
+
+.EstimatePage_link {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    border: 1px solid white;
+    padding-right: 5px;
+    padding-left: 5px;
+    background-color: #F2AB6D;
+    height: 40px;
+    width: 100%;
+}
+
+.Estimate_Delete {
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 200px;
+    height: 30px;
+    background-color: #587AA6;
+    border: none;
+    font-family: 'Cairo', sans-serif;
 }

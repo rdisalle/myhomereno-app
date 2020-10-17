@@ -115,7 +115,7 @@ class EditProject extends Component {
     })
       .then(res => {
         if (!res.ok);
-          return res.json().then(error => Promise.reject(error));
+          return (error => Promise.reject(error));
       })
       .then(() => {
         this.resetFields(newProject);
@@ -158,7 +158,7 @@ class EditProject extends Component {
             className="EditProject_form"
             onSubmit={this.handleSubmit}
         >
-            <div className="EditProject__error" role='alert'>
+            <div className="EditProject_error" role='alert'>
             {error && <p>{error.message}</p>}
             </div>
             <div className="EditProject_Name">
@@ -311,7 +311,7 @@ class EditProject extends Component {
                 />
             </div>
             <div className="EditProject_buttons">
-            <button className="EditProject_commandsCancel" type='button' onClick={this.handleClickCancel}>
+            <button className="EditProject_commands" type='button' onClick={this.handleClickCancel}>
               Cancel
             </button>
             <button className="EditProject_commands" type='submit'>

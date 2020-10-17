@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './ViewCurrentProjects.css';
 import ProjectPage from '../ProjectPage/ProjectPage';
-import { NavLink } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import MyHomeRenoContext from '../MyHomeRenoContext';
 import PropTypes from 'prop-types';
 
@@ -26,15 +25,15 @@ class ViewCurrentProjects extends Component {
                 <NavLink className="ViewProjectType_link" activeClassName="active" to={'/view-current-project-list'} >
                     All Projects
                 </NavLink>
-                <NavLink className="ViewProjectType_link" to={'/view-not-started-project-list'}>
+                <Link className="ViewProjectType_link" to={'/view-not-started-project-list'}>
                     Not Started
-                </NavLink>
-                <NavLink className="ViewProjectType_link" to={'/view-in-progress-project-list'}>
+                </Link>
+                <Link className="ViewProjectType_link" to={'/view-in-progress-project-list'}>
                     In Progress
-                </NavLink>
-                <NavLink className="ViewProjectType_link" to={'/view-completed-project-list'}>
+                </Link>
+                <Link className="ViewProjectType_link" to={'/view-completed-project-list'}>
                     Completed
-                </NavLink>
+                </Link>
             </div>
                 <Link className="AddProject_link" to={'/add-project'}>
                     Add New Project
