@@ -5,17 +5,17 @@ exports[`NavBar component renders a .NavBar by default 1`] = `
   className="NavBar"
 >
   <div
-    className="SearchBar__controls"
+    className="SearchBar_controls"
   >
     <Link
-      className="Landing_Link"
+      className="Nav_Link"
       to="/"
     >
       Home
     </Link>
      
     <Link
-      className="Landing_Link"
+      className="Nav_Link"
       to="/view-current-project-list"
     >
       View Projects

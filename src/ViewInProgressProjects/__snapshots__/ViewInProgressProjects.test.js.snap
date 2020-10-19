@@ -20,12 +20,13 @@ exports[`ViewInProgressProjects component renders a .ViewInProgressProjects by d
       Not Started
     </Link>
      
-    <Link
+    <NavLink
+      activeClassName="active"
       className="ViewProjectType_link"
       to="/view-in-progress-project-list"
     >
       In Progress
-    </Link>
+    </NavLink>
      
     <Link
       className="ViewProjectType_link"
@@ -40,6 +41,11 @@ exports[`ViewInProgressProjects component renders a .ViewInProgressProjects by d
   >
     Add Project
   </Link>
+  <h1
+    className="ViewCurrentProjects_header"
+  >
+    In Progress Projects
+  </h1>
   <ul
     className="ViewCurrentProjects_list"
   />

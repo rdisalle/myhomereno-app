@@ -8,10 +8,16 @@
     flex-direction: column;
     text-align: left;
     margin-left: 20px;
+    margin-bottom: 25px;
 }
 
 .EditEstimatePage_form {
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 250px;
 }
 
 .EditEstimate_buttons {
@@ -34,4 +40,26 @@
 select {
     font-family: 'Cairo', sans-serif;
     height: 24px;
+}
+
+@media only screen and (min-device-width: 768px) {
+    .EditEstimate_form {
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 2px solid #4681A6;
+        padding: 20px;
+    }
+    .EditEstimatePage_form {
+        width: 350px;
+    }
+}
+
+@media only screen and (min-device-width: 1200px) {
+    .EditEstimate_form {
+        width: 1000px;
+    }
+    .EditEstimatePage_form {
+        width: 500px;
+    }
 }

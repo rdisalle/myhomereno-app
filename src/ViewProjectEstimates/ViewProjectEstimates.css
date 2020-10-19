@@ -45,3 +45,37 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+@media only screen and (min-device-width: 768px) {
+    .ViewProjectEstimates_list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 600px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .ViewProjectEstimates_estimate {
+        width: 500px;
+    }
+}
+
+@media screen and (min-device-width: 1200px) {
+    .ViewProjectEstimates_name {
+        font-size: 40px;
+        width: 600px;
+        margin-bottom: 10px;
+    }
+    .ViewProjectEstimates_list {
+        width: 1000px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .ProjectEstimate_add {
+        font-size: 25px;
+    }
+    .ViewProjectEstimates_estimate {
+        width: 600px;
+    }
+}

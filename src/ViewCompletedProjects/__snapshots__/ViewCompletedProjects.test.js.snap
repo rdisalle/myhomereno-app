@@ -27,12 +27,13 @@ exports[`ViewCompletedProjects component renders a .ViewCompletedProjects by def
       In Progress
     </Link>
      
-    <Link
+    <NavLink
+      activeClassName="active"
       className="ViewProjectType_link"
       to="/view-completed-project-list"
     >
       Completed
-    </Link>
+    </NavLink>
   </div>
   <Link
     className="AddProject_link"
@@ -40,6 +41,11 @@ exports[`ViewCompletedProjects component renders a .ViewCompletedProjects by def
   >
     Add Project
   </Link>
+  <h1
+    className="ViewCurrentProjects_header"
+  >
+    Completed Projects
+  </h1>
   <ul
     className="ViewCurrentProjects_list"
   />

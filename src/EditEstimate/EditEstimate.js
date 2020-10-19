@@ -274,7 +274,7 @@ class EditEstimate extends Component {
                 />
             </div>
             <div className="EditEstimate_buttons">
-            <button className="EditEstimate_commandsCancel" type='button' onClick={this.handleClickCancel}>
+            <button className="EditEstimate_commands" type='button' onClick={this.handleClickCancel}>
               Cancel
             </button>
             <button className="EditEstimate_commands" type='submit'>

@@ -4,15 +4,15 @@ exports[`ViewProjectEstimates component renders a .ViewProjectEstimates by defau
 <div
   className="ViewProjectEstimates"
 >
-  <h2
-    className="ViewProjectEstimates_project"
-  />
   <Link
     className="ProjectEstimate_add"
     to="/add-estimate/undefined"
   >
     Add Estimate
   </Link>
+  <h2
+    className="ViewProjectEstimates_name"
+  />
   <ul
     className="ViewProjectEstimates_list"
   />

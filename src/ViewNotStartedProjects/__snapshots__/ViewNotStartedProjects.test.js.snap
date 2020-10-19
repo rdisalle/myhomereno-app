@@ -13,12 +13,13 @@ exports[`ViewNotStartedProjects component renders a .ViewNotStartedProjects by d
     >
       All Projects
     </Link>
-    <Link
+    <NavLink
+      activeClassName="active"
       className="ViewProjectType_link"
       to="/view-not-started-project-list"
     >
       Not Started
-    </Link>
+    </NavLink>
      
     <Link
       className="ViewProjectType_link"
@@ -40,6 +41,11 @@ exports[`ViewNotStartedProjects component renders a .ViewNotStartedProjects by d
   >
     Add Project
   </Link>
+  <h1
+    className="ViewCurrentProjects_header"
+  >
+    Not Started Projects
+  </h1>
   <ul
     className="ViewCurrentProjects_list"
   />

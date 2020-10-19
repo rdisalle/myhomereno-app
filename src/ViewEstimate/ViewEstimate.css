@@ -2,3 +2,24 @@
     margin-left: 10px;
     margin-right: 10px;
 }
+
+.EstimatePage_name {
+    font-size: 20px;
+    text-align: center;
+}
+
+@media only screen and (min-device-width: 768px) {
+    .ViewEstimatePage {
+        width: 600px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media screen and (min-device-width: 1200px) {
+    .ViewEstimatePage {
+        width: 1000px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
