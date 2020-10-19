@@ -33,7 +33,7 @@ Within projects, you can store and compare estimates and choose the best one for
 ![View Projects Page](/Images/view_projects.png)
 ![View Projects Page](/Images/view_projects_2.png)
 ![View Project](/Images/view_project.png)
-![Add Project](/Images/add_project_.png)
+![Add Project](/Images/add_project.png)
 ![Edit Project](/Images/edit_project.png)
 ![View Estimates](/Images/view_estimates.png)
 ![View Estimate](/Images/view_estimate.png)
