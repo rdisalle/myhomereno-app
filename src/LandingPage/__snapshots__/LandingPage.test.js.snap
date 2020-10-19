@@ -23,7 +23,7 @@ exports[`LandingPage component renders a .LandingPage by default 1`] = `
     <li
       className="LandingList_item"
     >
-      2. Simply click "View Projects" below
+      2. Click "View Projects" below
     </li>
     <li
       className="LandingList_item"

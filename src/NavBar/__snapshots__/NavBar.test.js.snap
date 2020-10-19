@@ -11,7 +11,10 @@ exports[`NavBar component renders a .NavBar by default 1`] = `
       className="Nav_Link"
       to="/"
     >
-      Home
+      <img
+        alt="home"
+        src="myhomereno.png"
+      />
     </Link>
      
     <Link
