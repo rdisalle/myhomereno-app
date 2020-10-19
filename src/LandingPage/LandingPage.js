@@ -10,7 +10,7 @@ class LandingPage extends Component {
             <h2 className="GetStarted">To Get Started: </h2>
             <ul className="Landing_list">
               <li className="LandingList_item">1. Keep track of your projects and project estimates all in one place</li>
-              <li className="LandingList_item">2. Simply click "View Projects" below</li>
+              <li className="LandingList_item">2. Click "View Projects" below</li>
               <li className="LandingList_item">3. On the view projects page, press "Add Project" and fill in the information.</li>
               <li className="LandingList_item">4. Once you have a project added, you will have the ability to add estimates to the project.</li>
               <li className="LandingList_item">5. To add an estimate, press "Add Estimate" and fill out the information.</li>

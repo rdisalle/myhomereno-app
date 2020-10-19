@@ -9,6 +9,9 @@
         margin-right: auto;
         margin-left: auto;
     }
+    .Project_Link {
+        margin-right: 20px;
+    }
 }
 
 @media screen and (min-device-width: 1200px) {
@@ -17,5 +20,7 @@
         margin-right: auto;
         margin-left: auto;
     }
-
+    .Project_Link {
+        margin-right: 20px;
+    }
 }
